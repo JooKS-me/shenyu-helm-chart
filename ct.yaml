@@ -4,5 +4,5 @@ target-branch: gh-pages
 chart-dirs:
   - charts
 chart-repos:
-  - shenyu=https://erdengk.github.io/shenyu-helm-chart
+  - shenyu=https://JooKS-me.github.io/shenyu-helm-chart
 helm-extra-args: --timeout 600s
