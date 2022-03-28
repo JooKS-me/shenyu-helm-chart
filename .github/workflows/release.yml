@@ -17,7 +17,7 @@ jobs:
       - name: Configure Git
         run: |
           git config user.name "JooKS-me"
-          git config user.email "JooKS-me@users.noreply.github.com"
+          git config user.email "jookunshuai@gmail.com"
       - name: Install Helm
         uses: azure/setup-helm@v1
         with:
@@ -28,9 +28,8 @@ jobs:
           helm repo add shenyu https://JooKS-me.github.io/shenyu-helm-chart/
 
       - name: Run chart-releaser
-        uses: helm/chart-releaser-action@v1.1.0
+        uses: helm/chart-releaser-action@v1.2.0
         with:
           charts_dir: charts
         env:
           CR_TOKEN: "${{ secrets.TOKEN }}"
-          CR_SKIP_EXISTING: true
